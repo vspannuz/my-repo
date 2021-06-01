@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href={% url 'first:others' %}>Others</a></li>
+        <li><a href={% url 'first:relative' %}>Relative</a></li>
+      </ul>
+    </nav>
+    <h1>welcomes you</h1>
+    {% block body_block %}
+
+    {% endblock%}
+  </body>
+</html>
